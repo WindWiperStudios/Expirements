@@ -1,0 +1,15 @@
+[gd_scene load_steps=4 format=3 uid="uid://dt6l7xaiaumac"]
+
+[ext_resource type="PackedScene" uid="uid://cbr105ss54u3k" path="res://Nodes/Screens/screen.tscn" id="1_24wjb"]
+[ext_resource type="Script" path="res://Nodes/Screens/PlayScreen.gd" id="2_fl7mc"]
+[ext_resource type="PackedScene" uid="uid://boj5p6bw6qpoh" path="res://Nodes/Experiments/nodes_experiment.tscn" id="3_n3ohm"]
+
+[node name="PlayScreen" instance=ExtResource("1_24wjb")]
+script = ExtResource("2_fl7mc")
+experimentScene = ExtResource("3_n3ohm")
+
+[node name="Center" type="CenterContainer" parent="." index="0"]
+layout_mode = 2
+
+[node name="Anchor" type="Control" parent="Center" index="0"]
+layout_mode = 2
